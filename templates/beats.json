@@ -1,0 +1,18 @@
+[
+  {
+    "beat_id": "beat-01",
+    "scene_id": "scene-01",
+    "story_function": "(fill in)",
+    "character_goal": "",
+    "character_state": "",
+    "action": "(fill in)",
+    "reaction": "",
+    "pressure": "",
+    "turn": "(fill in)",
+    "visual_opportunity": "",
+    "sound_opportunity": "",
+    "emotional_start": "",
+    "emotional_end": "",
+    "shot_ids": []
+  }
+]

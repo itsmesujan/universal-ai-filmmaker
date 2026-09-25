@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.1",
+  "project_id": "{{project_id}}",
+  "date": "{{date}}",
+  "reviewer": "",
+  "pass_threshold": 4,
+  "shots": [],
+  "continuity_checks": {
+    "identity": "",
+    "costume": "",
+    "props": "",
+    "geography": "",
+    "lighting": "",
+    "time_weather": "",
+    "emotional_state": ""
+  },
+  "final_decision": "OPEN",
+  "evaluation": {
+    "score": null,
+    "weakest_dimensions": [],
+    "evidence": []
+  }
+}

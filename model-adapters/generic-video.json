@@ -1,7 +1,11 @@
 {
+  "adapter_version": "1.1.0",
   "provider": "generic",
   "model": "replace-with-verified-model",
+  "model_type": "video",
   "verified_at": "YYYY-MM-DD",
+  "docs_url": "",
+  "placeholder": true,
   "capabilities": {
     "text_to_video": "unknown",
     "image_to_video": "unknown",
@@ -10,15 +14,25 @@
     "last_frame": "unknown",
     "multi_keyframe": "unknown",
     "camera_controls": "unknown",
-    "audio": "unknown"
+    "negative_prompt": "unknown",
+    "seed": "unknown",
+    "audio": "unknown",
+    "dialogue": "unknown",
+    "batching": "unknown"
   },
   "limits": {
     "duration": "unknown",
     "aspect_ratios": "unknown",
-    "resolution": "unknown"
+    "resolution": "unknown",
+    "max_reference_images": "unknown",
+    "prompt_length": "unknown"
   },
   "failure_modes": [],
   "translation_notes": [
-    "Verify current provider documentation before using this adapter."
+    "Verify current provider documentation before using this adapter.",
+    "Every capability stays \"unknown\" until it is confirmed and dated."
+  ],
+  "degraded_mode": [
+    "Until verified: emit neutral prompts only and let the operator map them manually."
   ]
 }

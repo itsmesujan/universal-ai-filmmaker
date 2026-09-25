@@ -1,0 +1,13 @@
+{
+  "id": "shot-budget-360s",
+  "type": "shot_budget",
+  "description": "A 6-minute narrative short plans to a realistic shot count with under 10% drift.",
+  "duration": 360,
+  "format": "narrative_short",
+  "pacing": "normal",
+  "expect": {
+    "max_drift_percent": 10,
+    "min_shots": 20,
+    "max_shots": 120
+  }
+}

@@ -1,0 +1,336 @@
+[
+  {
+    "id": "shot-001",
+    "scene_id": "scene-01",
+    "beat_id": "beat-01",
+    "coverage_role": "establishing",
+    "story_purpose": "Establish the wait and the emptiness of the platform",
+    "duration_target": 10,
+    "subject": "Anime teenage girl holding a red umbrella, alone on a rain-soaked night platform",
+    "reference_assets": [
+      "character:hana:v1",
+      "location:platform-4:v1",
+      "prop:red-umbrella:v1"
+    ],
+    "start_state": "Hana stands centre frame under the platform canopy, umbrella open at shoulder height, back to the tracks",
+    "primary_action": "She stays still while the platform clock ticks forward one minute",
+    "secondary_motion": "Rain falls in the foreground; a distant train light sweeps across the far end",
+    "camera": {
+      "type": "static",
+      "position": "wide_front",
+      "height": "eye_level",
+      "lens_equivalent": "wide"
+    },
+    "composition": {
+      "framing": "wide",
+      "angle": "eye_level",
+      "subject_position": "center",
+      "screen_direction": "center",
+      "headroom": "generous"
+    },
+    "lighting": {
+      "key": "cool fluorescent platform light",
+      "direction": "screen-left",
+      "quality": "soft",
+      "ratio": "high",
+      "temperature": "5600K",
+      "practicals": ["ceiling fluorescents", "vending machine glow"]
+    },
+    "environment": {
+      "location_id": "location:platform-4:v1",
+      "time": "night",
+      "weather": "rain",
+      "dressing": "wet concrete, empty benches, timetable board"
+    },
+    "style": {
+      "mode": "anime",
+      "rendering": "2D cel with painted background",
+      "style_lock_ref": "style:main:v1"
+    },
+    "performance": {
+      "behaviour": "She holds her posture and glances toward the far end of the platform",
+      "emotion_start": "expectant",
+      "emotion_end": "expectant",
+      "beat_stage": "neutralise"
+    },
+    "continuity": {
+      "costume": "school_uniform_v1",
+      "hair": "hana_v1",
+      "prop_state": "red_umbrella_open",
+      "damage": "none",
+      "held_items": "red umbrella in right hand"
+    },
+    "audio": {
+      "dialogue": "",
+      "speaker": "",
+      "ambience": "steady rain on the canopy, distant electrical hum",
+      "foley": "umbrella fabric shifting",
+      "effects": "",
+      "music": "low sustained pad"
+    },
+    "timing": {
+      "pacing": "slow",
+      "holds": "hold on the empty platform, then settle on Hana",
+      "speed": "normal"
+    },
+    "end_state": "Hana still centre frame, umbrella open, clock one minute later",
+    "negative_constraints": [
+      "no extra characters",
+      "no camera shake",
+      "do not change the umbrella colour"
+    ],
+    "generation_method": "text_to_video",
+    "risk_level": "medium",
+    "attempt_budget": 4,
+    "prompt_version": 1
+  },
+  {
+    "id": "shot-002",
+    "scene_id": "scene-01",
+    "beat_id": "beat-01",
+    "coverage_role": "subject",
+    "story_purpose": "Show her searching the platform for the friend",
+    "duration_target": 12,
+    "subject": "Anime teenage girl holding a red umbrella, scanning the platform",
+    "reference_assets": [
+      "character:hana:v1",
+      "location:platform-4:v1",
+      "prop:red-umbrella:v1"
+    ],
+    "start_state": "Hana stands just left of centre, umbrella at shoulder height, head turned toward the far end",
+    "primary_action": "She turns her head slowly from left to right, searching the empty platform",
+    "secondary_motion": "Rain streaks behind her; the timetable board flickers once",
+    "camera": {
+      "type": "slow_push_in",
+      "position": "medium_front",
+      "height": "eye_level",
+      "lens_equivalent": "normal",
+      "movement_speed": "slow",
+      "stabilization": "steadicam"
+    },
+    "composition": {
+      "framing": "medium",
+      "angle": "eye_level",
+      "subject_position": "left",
+      "screen_direction": "center",
+      "headroom": "normal"
+    },
+    "lighting": {
+      "key": "cool fluorescent platform light",
+      "direction": "screen-left",
+      "quality": "soft",
+      "ratio": "high",
+      "temperature": "5600K",
+      "rim": "wet backlight from the tracks"
+    },
+    "environment": {
+      "location_id": "location:platform-4:v1",
+      "time": "night",
+      "weather": "rain",
+      "dressing": "wet concrete, empty benches"
+    },
+    "style": {
+      "mode": "anime",
+      "rendering": "2D cel with painted background",
+      "style_lock_ref": "style:main:v1"
+    },
+    "performance": {
+      "behaviour": "Her brow lifts slightly, then she presses her lips together and exhales",
+      "emotion_start": "expectant",
+      "emotion_end": "concerned",
+      "beat_stage": "build"
+    },
+    "continuity": {
+      "costume": "school_uniform_v1",
+      "hair": "hana_v1",
+      "prop_state": "red_umbrella_open",
+      "damage": "none",
+      "held_items": "red umbrella in right hand"
+    },
+    "audio": {
+      "dialogue": "",
+      "speaker": "",
+      "ambience": "rain on the canopy, distant rails humming",
+      "foley": "footsteps shifting on wet concrete",
+      "effects": "",
+      "music": "low sustained pad"
+    },
+    "timing": {
+      "pacing": "slow",
+      "holds": "hold on her face after the head turn",
+      "speed": "normal"
+    },
+    "end_state": "Hana facing the camera-left edge, lips pressed, umbrella still open",
+    "negative_constraints": [
+      "no extra characters",
+      "do not change her uniform",
+      "no camera shake"
+    ],
+    "generation_method": "image_to_video",
+    "risk_level": "high",
+    "attempt_budget": 8,
+    "prompt_version": 1
+  },
+  {
+    "id": "shot-003",
+    "scene_id": "scene-01",
+    "beat_id": "beat-02",
+    "coverage_role": "reaction",
+    "story_purpose": "Reveal that she understands no one is coming",
+    "duration_target": 12,
+    "subject": "Close-up of an anime teenage girl beginning to lower a red umbrella",
+    "reference_assets": [
+      "character:hana:v1",
+      "prop:red-umbrella:v1"
+    ],
+    "start_state": "Hana in close-up, umbrella canopy entering the top of frame, eyes on the far end",
+    "primary_action": "She lowers the umbrella to shoulder height as her eyes widen a fraction",
+    "secondary_motion": "A departing train light crosses the background once",
+    "camera": {
+      "type": "static",
+      "position": "close_front",
+      "height": "eye_level",
+      "lens_equivalent": "portrait"
+    },
+    "composition": {
+      "framing": "close",
+      "angle": "eye_level",
+      "subject_position": "center",
+      "screen_direction": "center",
+      "headroom": "tight"
+    },
+    "lighting": {
+      "key": "cool fluorescent platform light",
+      "direction": "screen-left",
+      "quality": "soft",
+      "ratio": "high",
+      "temperature": "5600K",
+      "rim": "wet backlight from the tracks"
+    },
+    "environment": {
+      "location_id": "location:platform-4:v1",
+      "time": "night",
+      "weather": "rain"
+    },
+    "style": {
+      "mode": "anime",
+      "rendering": "2D cel with painted background",
+      "style_lock_ref": "style:main:v1"
+    },
+    "performance": {
+      "behaviour": "Her eyes widen a fraction, she blinks once, and her shoulders drop",
+      "emotion_start": "concerned",
+      "emotion_end": "isolated",
+      "beat_stage": "peak"
+    },
+    "continuity": {
+      "costume": "school_uniform_v1",
+      "hair": "hana_v1",
+      "prop_state": "red_umbrella_lowered",
+      "damage": "none",
+      "held_items": "red umbrella in right hand"
+    },
+    "audio": {
+      "dialogue": "",
+      "speaker": "",
+      "ambience": "rain, faint engine rumble fading",
+      "foley": "umbrella fabric collapsing",
+      "effects": "train door chime far off",
+      "music": "pad drops to a single held note"
+    },
+    "timing": {
+      "pacing": "slow",
+      "holds": "hold on her eyes for two counts after the blink",
+      "speed": "normal"
+    },
+    "end_state": "Umbrella lowered to shoulder height, her gaze fixed off screen",
+    "negative_constraints": [
+      "do not change her uniform",
+      "no extra characters",
+      "no tears"
+    ],
+    "generation_method": "image_to_video",
+    "risk_level": "high",
+    "attempt_budget": 8,
+    "prompt_version": 1
+  },
+  {
+    "id": "shot-004",
+    "scene_id": "scene-01",
+    "beat_id": "beat-02",
+    "coverage_role": "insert",
+    "story_purpose": "Land the decision with an object beat",
+    "duration_target": 8,
+    "subject": "Insert on a red umbrella lowering out of frame above wet platform concrete",
+    "reference_assets": [
+      "prop:red-umbrella:v1",
+      "location:platform-4:v1"
+    ],
+    "start_state": "Framing on wet concrete with the red umbrella canopy entering from above",
+    "primary_action": "The umbrella lowers until only its tip remains in frame, then stops",
+    "secondary_motion": "Raindrops bounce on the concrete and one puddle ripples",
+    "camera": {
+      "type": "static",
+      "position": "insert_high",
+      "height": "low_angle",
+      "lens_equivalent": "macro"
+    },
+    "composition": {
+      "framing": "insert",
+      "angle": "low_angle",
+      "subject_position": "center",
+      "screen_direction": "center",
+      "headroom": "none"
+    },
+    "lighting": {
+      "key": "cool fluorescent platform light",
+      "direction": "screen-left",
+      "quality": "soft",
+      "ratio": "high",
+      "temperature": "5600K"
+    },
+    "environment": {
+      "location_id": "location:platform-4:v1",
+      "time": "night",
+      "weather": "rain"
+    },
+    "style": {
+      "mode": "anime",
+      "rendering": "2D cel with painted background",
+      "style_lock_ref": "style:main:v1"
+    },
+    "performance": {
+      "behaviour": "No character performance; the object beat carries the moment",
+      "emotion_start": "isolated",
+      "emotion_end": "resolved",
+      "beat_stage": "release"
+    },
+    "continuity": {
+      "costume": "school_uniform_v1",
+      "prop_state": "red_umbrella_lowered",
+      "damage": "none"
+    },
+    "audio": {
+      "dialogue": "",
+      "speaker": "",
+      "ambience": "rain on concrete",
+      "foley": "umbrella tip tapping the ground",
+      "effects": "",
+      "music": "single note resolves"
+    },
+    "timing": {
+      "pacing": "slow",
+      "holds": "hold on the puddle after the umbrella stops",
+      "speed": "normal"
+    },
+    "end_state": "Umbrella tip resting on wet concrete, frame otherwise empty",
+    "negative_constraints": [
+      "no people in frame",
+      "do not change the umbrella colour"
+    ],
+    "generation_method": "image_to_video",
+    "risk_level": "medium",
+    "attempt_budget": 4,
+    "prompt_version": 1
+  }
+]

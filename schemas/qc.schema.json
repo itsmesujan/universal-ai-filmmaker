@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-ai-filmmaker/qc.schema.json",
+  "title": "Universal QC Report",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project_id",
+    "shots"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "pass_threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "shot_id",
+          "status"
+        ],
+        "properties": {
+          "shot_id": {
+            "type": "string"
+          },
+          "attempt": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "REPAIR",
+              "REGENERATE",
+              "REPLACE"
+            ]
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 5
+          },
+          "failure_class": {
+            "type": "string",
+            "enum": [
+              "IDENTITY",
+              "STYLE",
+              "ANATOMY",
+              "MOTION",
+              "CAMERA",
+              "COMPOSITION",
+              "PHYSICS",
+              "LIGHTING",
+              "BACKGROUND",
+              "OBJECTS",
+              "TEXT",
+              "AUDIO",
+              "TEMPORAL",
+              "CONTINUITY",
+              "TOOL_ERROR",
+              "NONE",
+              "OTHER"
+            ]
+          },
+          "repair": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "compromise": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "continuity_checks": {
+      "type": "object"
+    },
+    "final_decision": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "REPAIR",
+        "REGENERATE",
+        "REPLACE",
+        "OPEN"
+      ]
+    },
+    "evaluation": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "continuity-detects-costume-drift",
+  "type": "continuity",
+  "description": "A costume change inside one scene is reported as STATE drift.",
+  "shots": "evals/fixtures/costume-drift/shots.json",
+  "ledger": "evals/fixtures/costume-drift/continuity.json",
+  "expect_classes": [
+    "STATE"
+  ]
+}

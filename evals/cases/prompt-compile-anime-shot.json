@@ -1,0 +1,29 @@
+{
+  "id": "prompt-compile-anime-shot",
+  "type": "prompt_compile",
+  "description": "Compiling a SHOT_SPEC produces every required block and lints clean.",
+  "shots": "examples/mini-project/shots.json",
+  "shot": "shot-003",
+  "expect_image_blocks": [
+    "SUBJECT",
+    "POSE",
+    "ACTION",
+    "COMPOSITION",
+    "LIGHTING",
+    "CAMERA",
+    "STYLE",
+    "CONTINUITY",
+    "CONSTRAINTS"
+  ],
+  "expect_video_blocks": [
+    "START STATE",
+    "SUBJECT MOTION",
+    "SECONDARY MOTION",
+    "CAMERA MOTION",
+    "PERFORMANCE",
+    "TIMING",
+    "END STATE",
+    "CONTINUITY"
+  ],
+  "expect_no_lint": true
+}

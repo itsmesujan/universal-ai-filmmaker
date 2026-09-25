@@ -11,6 +11,8 @@ Thumbs.db
 *.mkv
 *.wav
 *.mp3
+*.aac
+*.flac
 *.png
 *.jpg
 *.jpeg
@@ -18,6 +20,10 @@ Thumbs.db
 renders/
 outputs/
 tmp/
+
+# Local productions scaffolded with scripts/new_project.py
+# (kept out of the package: the repository ships the skill, not your film)
+projects/
 
 # Local secrets
 .env

@@ -1,0 +1,10 @@
+{
+  "id": "mini-project-schemas",
+  "type": "validate",
+  "description": "The bundled mini project validates against every bundled schema.",
+  "path": "examples/mini-project",
+  "expect": {
+    "errors": 0,
+    "min_checked": 4
+  }
+}

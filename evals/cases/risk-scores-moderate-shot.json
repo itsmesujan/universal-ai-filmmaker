@@ -1,0 +1,31 @@
+{
+  "id": "risk-scores-moderate-shot",
+  "type": "risk",
+  "description": "A two-subject fight shot with rain lands in the medium band with a 4-attempt budget.",
+  "shot": {
+    "id": "shot-risk",
+    "duration_target": 8,
+    "subject": "two fighters on a rooftop",
+    "primary_action": "fight in the rain while the camera holds",
+    "reference_assets": [
+      "character:kael:v1"
+    ],
+    "environment": {
+      "weather": "rain"
+    },
+    "camera": {
+      "type": "static"
+    },
+    "style": {
+      "mode": "cinematic"
+    },
+    "continuity": {
+      "costume": "coat_v1"
+    }
+  },
+  "expect": {
+    "risk_level": "medium",
+    "min_total": 6,
+    "attempt_budget": 4
+  }
+}

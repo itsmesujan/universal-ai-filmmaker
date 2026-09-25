@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.1",
+  "characters": [
+    {
+      "id": "character:hana:v1",
+      "appearance": "16-year-old girl, small frame, oval face, dark grey eyes, black hair in a low ponytail",
+      "costume": "school_uniform_v1 (navy blazer, white shirt, red ribbon, grey pleated skirt)",
+      "accessories": [
+        "school bag (not carried in scene-01)"
+      ],
+      "voice": "quiet, slightly breathy",
+      "movement_style": "still, restrained; small deliberate gestures",
+      "state_overrides": [
+        {
+          "scene_id": "scene-01",
+          "state": "wet hair tips, damp blazer cuffs after rain exposure"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "location:platform-4:v1",
+      "layout_reference": "covered commuter platform, benches along the back wall, timetable board left of frame, tracks right",
+      "landmarks": [
+        "timetable board",
+        "vending machine",
+        "platform clock"
+      ],
+      "entrances_exits": [
+        "stairs at the far left end"
+      ],
+      "light_direction": "screen-left (ceiling fluorescents)"
+    }
+  ],
+  "props": [
+    {
+      "id": "prop:red-umbrella:v1",
+      "owner": "character:hana:v1",
+      "condition": "intact, dripping",
+      "position_history": [
+        {
+          "shot_id": "shot-001",
+          "state": "open, held at shoulder height in right hand"
+        },
+        {
+          "shot_id": "shot-002",
+          "state": "open, held at shoulder height in right hand"
+        },
+        {
+          "shot_id": "shot-003",
+          "state": "lowered to shoulder height, canopy moving out of frame"
+        },
+        {
+          "shot_id": "shot-004",
+          "state": "tip resting on the concrete"
+        }
+      ]
+    }
+  ],
+  "time_and_weather": [
+    {
+      "scene_id": "scene-01",
+      "time": "night",
+      "weather": "steady rain",
+      "light_source": "ceiling fluorescents, vending machine, distant train lights",
+      "light_direction": "screen-left"
+    }
+  ],
+  "screen_geometry": [
+    {
+      "scene_id": "scene-01",
+      "axis": "camera stays track-side of Hana; the tracks remain on the right of frame",
+      "screen_left": "timetable board and stairs",
+      "screen_right": "tracks and train lights",
+      "travel_directions": {
+        "train_lights": "screen-right to screen-left",
+        "hana": "stationary"
+      }
+    }
+  ],
+  "object_state": [
+    {
+      "scene_id": "scene-01",
+      "subject": "character:hana:v1",
+      "costume": "school_uniform_v1",
+      "damage": "none",
+      "dirt": "none",
+      "wetness": "hair tips and cuffs damp",
+      "held_items": [
+        "prop:red-umbrella:v1"
+      ]
+    }
+  ],
+  "emotional_state": [
+    {
+      "shot_id": "shot-001",
+      "start": "expectant",
+      "end": "expectant"
+    },
+    {
+      "shot_id": "shot-002",
+      "start": "expectant",
+      "end": "concerned"
+    },
+    {
+      "shot_id": "shot-003",
+      "start": "concerned",
+      "end": "isolated"
+    },
+    {
+      "shot_id": "shot-004",
+      "start": "isolated",
+      "end": "resolved"
+    }
+  ],
+  "violations": []
+}

@@ -1,0 +1,39 @@
+{
+  "adapter_version": "1.1.0",
+  "provider": "example-provider",
+  "model": "example-video-model",
+  "model_type": "video",
+  "verified_at": "2026-09-26",
+  "docs_url": "https://example.invalid/docs",
+  "capabilities": {
+    "text_to_video": "unknown",
+    "image_to_video": "unknown",
+    "reference_images": "unknown",
+    "first_frame": "unknown",
+    "last_frame": "unknown",
+    "multi_keyframe": "unknown",
+    "camera_controls": "unknown",
+    "negative_prompt": "unknown",
+    "seed": "unknown",
+    "audio": "unknown",
+    "dialogue": "unknown",
+    "batching": "unknown"
+  },
+  "limits": {
+    "duration": [],
+    "aspect_ratios": [],
+    "resolution": [],
+    "max_reference_images": "unknown",
+    "prompt_length": "unknown"
+  },
+  "failure_modes": [],
+  "translation_notes": [
+    "Illustrative snapshot only: capabilities were not probed against a live provider.",
+    "Replace every \"unknown\" with a dated verification before exporting real prompts."
+  ],
+  "degraded_mode": [
+    "No camera_controls: express movement as prose and accept lower fidelity.",
+    "No last_frame control: chain shots via the extracted final frame.",
+    "Unverified duration limit: plan 3-8 s shots."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1",
+  "project_id": "rain-platform",
+  "title": "Rain Platform",
+  "format": "narrative_short",
+  "target_duration_seconds": 42,
+  "aspect_ratio": "16:9",
+  "frame_rate": 24,
+  "language": "en",
+  "genre": [
+    "cinematic",
+    "anime"
+  ],
+  "status": "development",
+  "creative": {
+    "logline": "A girl waits on a rain-soaked platform for a friend who never comes.",
+    "theme": "Is being alone a failure or a beginning?",
+    "tone": "quiet, wet, melancholic",
+    "audience": "general"
+  },
+  "assets": {
+    "characters": [
+      "character:hana:v1"
+    ],
+    "locations": [
+      "location:platform-4:v1"
+    ],
+    "props": [
+      "prop:red-umbrella:v1"
+    ]
+  },
+  "production": {
+    "agents": [],
+    "image_models": [],
+    "video_models": [],
+    "audio_models": [],
+    "editors": []
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "purpose": "establish the wait and reveal it is futile",
+      "location_id": "location:platform-4:v1",
+      "time": "night",
+      "characters": [
+        "character:hana:v1"
+      ],
+      "emotional_start": "expectant",
+      "emotional_end": "isolated",
+      "dramatic_turn": "the platform is empty and the last train leaves",
+      "visual_thesis": "a small figure inside a huge empty space",
+      "required_assets": [
+        "prop:red-umbrella:v1"
+      ],
+      "lighting_plan": "cool practicals, key screen-left, high ratio",
+      "beat_ids": [
+        "beat-01",
+        "beat-02"
+      ]
+    }
+  ],
+  "shots": [],
+  "continuity": {
+    "ledger": "continuity.json"
+  },
+  "audio": {
+    "plan": "audio-plan.md"
+  },
+  "edit": {
+    "plan": "edit-plan.md"
+  },
+  "qc": {
+    "report": "qc-report.json"
+  }
+}

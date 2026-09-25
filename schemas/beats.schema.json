@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-ai-filmmaker/beats.schema.json",
+  "title": "Universal Beats",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "beat_id",
+      "scene_id",
+      "story_function",
+      "action",
+      "turn"
+    ],
+    "properties": {
+      "beat_id": {
+        "type": "string",
+        "pattern": "^beat-[A-Za-z0-9._-]+$"
+      },
+      "scene_id": {
+        "type": "string",
+        "pattern": "^scene-[A-Za-z0-9._-]+$"
+      },
+      "story_function": {
+        "type": "string",
+        "minLength": 3
+      },
+      "character_goal": {
+        "type": "string"
+      },
+      "character_state": {
+        "type": "string"
+      },
+      "action": {
+        "type": "string",
+        "minLength": 3
+      },
+      "reaction": {
+        "type": "string"
+      },
+      "pressure": {
+        "type": "string"
+      },
+      "turn": {
+        "type": "string",
+        "minLength": 3
+      },
+      "visual_opportunity": {
+        "type": "string"
+      },
+      "sound_opportunity": {
+        "type": "string"
+      },
+      "emotional_start": {
+        "type": "string"
+      },
+      "emotional_end": {
+        "type": "string"
+      },
+      "shot_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "additionalProperties": true
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "shot-bad",
+    "scene_id": "scene-01",
+    "story_purpose": "fixture: a shot that must fail the prompt linter",
+    "duration_target": 5,
+    "subject": "a lone detective in an alley",
+    "reference_assets": [
+      "detective"
+    ],
+    "start_state": "standing under a lamp",
+    "primary_action": "she looks at the camera",
+    "camera": {
+      "type": "static",
+      "lens_equivalent": "normal"
+    },
+    "composition": {
+      "framing": "medium",
+      "screen_direction": "center"
+    },
+    "lighting": {
+      "direction": "screen-left",
+      "quality": "hard",
+      "ratio": "high",
+      "temperature": "3200K"
+    },
+    "environment": {
+      "location_id": "location:alley:v1",
+      "time": "night"
+    },
+    "style": {
+      "mode": "cinematic",
+      "rendering": "photoreal"
+    },
+    "continuity": {
+      "costume": "trench_coat_v1"
+    },
+    "end_state": "still in the alley",
+    "negative_constraints": [
+      "--ar 16:9",
+      "--motion 6",
+      "4k masterpiece, ultra detailed",
+      "she is sad"
+    ],
+    "generation_method": "text_to_video",
+    "risk_level": "low",
+    "prompt_version": 1
+  }
+]

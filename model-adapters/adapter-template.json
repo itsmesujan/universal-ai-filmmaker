@@ -1,22 +1,33 @@
 {
+  "adapter_version": "1.1.0",
   "provider": "{{provider}}",
   "model": "{{model}}",
+  "model_type": "video",
   "verified_at": "{{YYYY-MM-DD}}",
+  "docs_url": "{{docs_url}}",
+  "placeholder": true,
   "capabilities": {
-    "text_to_video": false,
-    "image_to_video": false,
-    "reference_images": false,
-    "first_frame": false,
-    "last_frame": false,
-    "multi_keyframe": false,
-    "camera_controls": [],
-    "audio": false
+    "text_to_video": "unknown",
+    "image_to_video": "unknown",
+    "reference_images": "unknown",
+    "first_frame": "unknown",
+    "last_frame": "unknown",
+    "multi_keyframe": "unknown",
+    "camera_controls": "unknown",
+    "negative_prompt": "unknown",
+    "seed": "unknown",
+    "audio": "unknown",
+    "dialogue": "unknown",
+    "batching": "unknown"
   },
   "limits": {
     "duration": [],
     "aspect_ratios": [],
-    "resolution": []
+    "resolution": [],
+    "max_reference_images": "unknown",
+    "prompt_length": "unknown"
   },
   "failure_modes": [],
-  "translation_notes": []
+  "translation_notes": [],
+  "degraded_mode": []
 }

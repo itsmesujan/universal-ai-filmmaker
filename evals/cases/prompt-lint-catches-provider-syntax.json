@@ -1,0 +1,8 @@
+{
+  "id": "prompt-lint-catches-provider-syntax",
+  "type": "prompt_compile",
+  "description": "The linter must reject provider syntax, quality spam, and unversioned canon ids.",
+  "shots": "evals/fixtures/lint-violations/shots.json",
+  "shot": "shot-bad",
+  "expect_lint_contains": "provider syntax"
+}

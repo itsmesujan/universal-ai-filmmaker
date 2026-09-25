@@ -1,0 +1,40 @@
+[
+  {
+    "beat_id": "beat-01",
+    "scene_id": "scene-01",
+    "story_function": "establish the wait",
+    "character_goal": "meet a friend",
+    "character_state": "expectant",
+    "action": "Hana waits on the platform and searches for a familiar face",
+    "reaction": "no one arrives",
+    "pressure": "the platform clock moves forward",
+    "turn": "searching becomes doubt",
+    "visual_opportunity": "small figure inside a huge, wet, empty space",
+    "sound_opportunity": "rain on the canopy, distant rails humming",
+    "emotional_start": "expectant",
+    "emotional_end": "concerned",
+    "shot_ids": [
+      "shot-001",
+      "shot-002"
+    ]
+  },
+  {
+    "beat_id": "beat-02",
+    "scene_id": "scene-01",
+    "story_function": "accept the outcome",
+    "character_goal": "hold on to hope",
+    "character_state": "concerned",
+    "action": "she lets the umbrella drop to shoulder height",
+    "reaction": "she exhales and stops searching",
+    "pressure": "the last train leaves without her friend",
+    "turn": "doubt becomes acceptance",
+    "visual_opportunity": "the umbrella leaving frame, leaving an empty platform",
+    "sound_opportunity": "engine rumble fading, single held note",
+    "emotional_start": "concerned",
+    "emotional_end": "resolved",
+    "shot_ids": [
+      "shot-003",
+      "shot-004"
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "shot-001",
+    "scene_id": "scene-01",
+    "story_purpose": "fixture: first half of a scene in the clean uniform",
+    "duration_target": 5,
+    "subject": "a student on a platform",
+    "reference_assets": [
+      "character:hana:v1"
+    ],
+    "start_state": "standing with an umbrella",
+    "primary_action": "she looks down the platform",
+    "camera": {
+      "type": "static",
+      "lens_equivalent": "normal"
+    },
+    "composition": {
+      "framing": "medium",
+      "screen_direction": "center"
+    },
+    "lighting": {
+      "direction": "screen-left",
+      "quality": "soft",
+      "ratio": "high"
+    },
+    "environment": {
+      "location_id": "location:platform-4:v1",
+      "time": "night",
+      "weather": "rain"
+    },
+    "style": {
+      "mode": "anime"
+    },
+    "continuity": {
+      "costume": "school_uniform_v1"
+    },
+    "end_state": "still standing",
+    "generation_method": "image_to_video",
+    "risk_level": "low",
+    "prompt_version": 1
+  },
+  {
+    "id": "shot-002",
+    "scene_id": "scene-01",
+    "story_purpose": "fixture: second half of the scene, costume has silently changed",
+    "duration_target": 5,
+    "subject": "a student on a platform",
+    "reference_assets": [
+      "character:hana:v1"
+    ],
+    "start_state": "still standing",
+    "primary_action": "she turns toward the tracks",
+    "camera": {
+      "type": "slow_push_in",
+      "lens_equivalent": "portrait"
+    },
+    "composition": {
+      "framing": "close",
+      "screen_direction": "center"
+    },
+    "lighting": {
+      "direction": "screen-left",
+      "quality": "soft",
+      "ratio": "high"
+    },
+    "environment": {
+      "location_id": "location:platform-4:v1",
+      "time": "night",
+      "weather": "rain"
+    },
+    "style": {
+      "mode": "anime"
+    },
+    "continuity": {
+      "costume": "winter_coat_v2"
+    },
+    "end_state": "facing the tracks",
+    "generation_method": "image_to_video",
+    "risk_level": "low",
+    "prompt_version": 1
+  }
+]

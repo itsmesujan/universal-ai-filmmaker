@@ -1,17 +1,15 @@
 {
-  "schema_version": "1.0",
-  "project_id": "example-project",
-  "title": "Untitled Film",
-  "format": "short_film",
-  "target_duration_seconds": 360,
-  "aspect_ratio": "16:9",
+  "schema_version": "1.1",
+  "project_id": "{{project_id}}",
+  "title": "{{title}}",
+  "format": "{{format}}",
+  "target_duration_seconds": {{duration}},
+  "aspect_ratio": "{{aspect_ratio}}",
   "frame_rate": 24,
   "language": "en",
-  "genre": [
-    "cinematic",
-    "anime"
-  ],
+  "genre": [],
   "status": "development",
+  "production_state": "IDEA",
   "creative": {
     "logline": "",
     "theme": "",
@@ -30,10 +28,23 @@
     "audio_models": [],
     "editors": []
   },
+  "budget": {
+    "scene_count": {{scene_count}},
+    "shot_count": {{shot_count}},
+    "attempt_budget_total": 0
+  },
   "scenes": [],
   "shots": [],
-  "continuity": {},
-  "audio": {},
-  "edit": {},
-  "qc": {}
+  "continuity": {
+    "ledger": "continuity.json"
+  },
+  "audio": {
+    "plan": "audio-plan.md"
+  },
+  "edit": {
+    "plan": "edit-plan.md"
+  },
+  "qc": {
+    "report": "qc-report.json"
+  }
 }

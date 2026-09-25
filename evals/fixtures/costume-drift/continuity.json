@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.1",
+  "characters": [
+    {
+      "id": "character:hana:v1",
+      "appearance": "16-year-old girl, ponytail, grey eyes",
+      "costume": "school_uniform_v1",
+      "state_overrides": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "location:platform-4:v1",
+      "layout_reference": "covered commuter platform",
+      "landmarks": [
+        "timetable board"
+      ],
+      "light_direction": "screen-left"
+    }
+  ],
+  "props": [],
+  "time_and_weather": [
+    {
+      "scene_id": "scene-01",
+      "time": "night",
+      "weather": "rain",
+      "light_direction": "screen-left"
+    }
+  ],
+  "screen_geometry": [
+    {
+      "scene_id": "scene-01",
+      "axis": "camera track-side, tracks on the right",
+      "screen_left": "timetable board",
+      "screen_right": "tracks"
+    }
+  ],
+  "object_state": [
+    {
+      "scene_id": "scene-01",
+      "subject": "character:hana:v1",
+      "costume": "school_uniform_v1"
+    }
+  ],
+  "emotional_state": [
+    {
+      "shot_id": "shot-001",
+      "start": "expectant",
+      "end": "concerned"
+    },
+    {
+      "shot_id": "shot-002",
+      "start": "concerned",
+      "end": "isolated"
+    }
+  ],
+  "violations": []
+}

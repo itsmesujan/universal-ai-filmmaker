@@ -12,17 +12,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Validate required files
         shell: bash
         run: |
           test -f SKILL.md
           test -f README.md
           test -f LICENSE
-          test -d references
-          test -d templates
-          test -d schemas
-          test -d model-adapters
-          test -d examples
+          test -f CONTRIBUTING.md
+          test -f CHANGELOG.md
+          for dir in references templates schemas model-adapters examples docs scripts evals; do
+            test -d "$dir"
+          done
 
       - name: Validate JSON
         shell: bash
@@ -31,10 +36,15 @@ jobs:
           import json
           from pathlib import Path
 
+          skip = {".git", ".venv", "node_modules", "__pycache__", "projects"}
           for p in Path(".").rglob("*.json"):
-              if any(part in {".git", ".venv", "node_modules"} for part in p.parts):
+              if any(part in skip for part in p.parts):
                   continue
-              json.loads(p.read_text(encoding="utf-8"))
+              text = p.read_text(encoding="utf-8")
+              if "{{" in text:
+                  print("SKIP (template)", p)
+                  continue
+              json.loads(text)
               print("OK", p)
           PY
 
@@ -43,3 +53,21 @@ jobs:
         run: |
           head -n 5 SKILL.md | grep -q '^name: universal-ai-filmmaker$'
           head -n 5 SKILL.md | grep -q '^description:'
+
+      - name: Lint skill package
+        run: python scripts/lint_skill.py
+
+      - name: Check MANIFEST.json is current
+        run: python scripts/manifest.py --check
+
+      - name: Validate schemas and examples
+        run: python scripts/validate.py examples model-adapters
+
+      - name: Run evals
+        run: python scripts/run_evals.py
+
+      - name: Smoke-test the plan and prompt tools
+        run: |
+          python scripts/shot_budget.py --duration 360 --json > /dev/null
+          python scripts/prompt_compile.py examples/mini-project/shots.json --lint
+          python scripts/continuity_check.py examples/mini-project --strict
