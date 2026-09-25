@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-ai-filmmaker/project.schema.json",
+  "title": "Universal AI Filmmaker Project",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project_id",
+    "title",
+    "format",
+    "target_duration_seconds"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "target_duration_seconds": {
+      "type": "number",
+      "minimum": 1
+    },
+    "aspect_ratio": {
+      "type": "string"
+    },
+    "frame_rate": {
+      "type": "number",
+      "minimum": 1
+    },
+    "language": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string"
+    },
+    "creative": {
+      "type": "object"
+    },
+    "assets": {
+      "type": "object"
+    },
+    "production": {
+      "type": "object"
+    },
+    "scenes": {
+      "type": "array"
+    },
+    "shots": {
+      "type": "array"
+    },
+    "continuity": {
+      "type": "object"
+    },
+    "audio": {
+      "type": "object"
+    },
+    "edit": {
+      "type": "object"
+    },
+    "qc": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

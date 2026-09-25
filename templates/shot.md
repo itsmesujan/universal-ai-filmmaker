@@ -1,0 +1,22 @@
+# SHOT_SPEC {{shot_id}}
+
+- Scene:
+- Beat:
+- Story purpose:
+- Duration:
+- Subject:
+- References:
+- Start state:
+- Primary action:
+- Secondary motion:
+- Camera:
+- Composition:
+- Lighting:
+- Environment:
+- Style:
+- Continuity:
+- Audio:
+- End state:
+- Negative constraints:
+- Generation method:
+- Risk:

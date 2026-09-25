@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-ai-filmmaker/model-adapter.schema.json",
+  "title": "Model Adapter",
+  "type": "object",
+  "required": [
+    "provider",
+    "model",
+    "verified_at",
+    "capabilities"
+  ],
+  "properties": {
+    "provider": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "verified_at": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "object"
+    },
+    "limits": {
+      "type": "object"
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "translation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,171 @@
+{
+  "repository": "universal-ai-filmmaker",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": ".github/CODEOWNERS",
+      "sha256": "c1cbca2b446dbfe2328515b2565bc081020497366631b2c2d560e68c5ecbbc76",
+      "bytes": 79
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "01e330e0723d9a3f682a5b61ff5b4b615e67d2d264c801aff7ce48ba53daf9b1",
+      "bytes": 200
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sha256": "f549b687000ab07be4bce20032459c073cce3e637e11749a8e19c03248a1012d",
+      "bytes": 187
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "3f6f9a6541dae509c34d961a5d058c47e8d014d51994327a089aad8cc928ac44",
+      "bytes": 335
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "2c096cff81fec8806afe6bc720fb8e8e7046138e0af7fc6b78cfe6497b2faa5f",
+      "bytes": 1072
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1519aaf57d7bf4497d164e9da7c226e2ca4b23938012f3a205cfef0ef4f763bd",
+      "bytes": 313
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "394dd4d6ba9a8ea5f73b2bf0540c3a5b5047adfc3fd711e7b61d058ade137d7d",
+      "bytes": 495
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "8efdf33656187235b165a970bc08f63090367cd5048489e3945bb3c12b0a4aad",
+      "bytes": 860
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "05cbff21a5062117ff9bf5f6372c923064b31324cb27b9652421344b48be209c",
+      "bytes": 1092
+    },
+    {
+      "path": "MANIFEST.json",
+      "sha256": "456d69dac90062b1f0f95e1d6fb69cbbb517dc10ee0b5f2fd652377d7c63aa47",
+      "bytes": 3683
+    },
+    {
+      "path": "README.md",
+      "sha256": "2bf8dd68ee2fbb775fcf72bbe9c656b3972aa5d838be5300ce1d4c565b4a59ce",
+      "bytes": 2338
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "bd5427b27edd659afeda012997f1c7bd9ddfb73159bc60b9df95cf0317c85346",
+      "bytes": 6873
+    },
+    {
+      "path": "examples/shot-spec.example.json",
+      "sha256": "4cb6ea79f09d7dadcc84a5d1175c1fa668c2148513bd3c6f72a0daaf6bd7c4dd",
+      "bytes": 1445
+    },
+    {
+      "path": "model-adapters/adapter-template.json",
+      "sha256": "b21f5a6198d3c939814fc773d03cfcacebb24e1c11b5c9c622d264050a5a25b8",
+      "bytes": 465
+    },
+    {
+      "path": "model-adapters/generic-video.json",
+      "sha256": "6fdfa9e50d712471553f24686a33854809410f4591a644e45b16afe6aca12b0e",
+      "bytes": 604
+    },
+    {
+      "path": "references/anime-mode.md",
+      "sha256": "c595b5c478816e00afc35fa9a8060bfdcd6cd0eba96e7c8e643078b0c46d169e",
+      "bytes": 411
+    },
+    {
+      "path": "references/audio-edit.md",
+      "sha256": "dcbf7e90015a362d20a1605b3dad4214da430f385f70f63ec390e8aec07e2cfa",
+      "bytes": 352
+    },
+    {
+      "path": "references/cinematic-mode.md",
+      "sha256": "3ef3c0e820f7aeb2b680d6406d2256a7a0df634027d3f6f3674cda038aa80e9c",
+      "bytes": 332
+    },
+    {
+      "path": "references/continuity.md",
+      "sha256": "9bbf1b7762e27ed477750ea7888306b65e2c957fd70954fbd0baf363e91ace79",
+      "bytes": 724
+    },
+    {
+      "path": "references/model-adaptation.md",
+      "sha256": "ffe1f4e212a5a26959740d8a33087b580d6b2677f01e74d6055d0e4987e23d72",
+      "bytes": 713
+    },
+    {
+      "path": "references/prompting.md",
+      "sha256": "33a3f726880cb0d8f2d96d5b2bdd8d22d6eafabe27e727bf1a53ca9384ac2aab",
+      "bytes": 683
+    },
+    {
+      "path": "references/qc.md",
+      "sha256": "aafd6717c69e2c5c159d517d1adbf54f06f5f579b8f58e9b993602255a534b9d",
+      "bytes": 852
+    },
+    {
+      "path": "references/workflow.md",
+      "sha256": "70e1ee98307bdb7baa851426fb0d8165b0261d78da14228871b93053e335803b",
+      "bytes": 1019
+    },
+    {
+      "path": "schemas/model-adapter.schema.json",
+      "sha256": "c08fb2b9c87a6a20215c715e2e128fbd88ee9b3aa27b410639251988937ac63a",
+      "bytes": 790
+    },
+    {
+      "path": "schemas/project.schema.json",
+      "sha256": "cdf23fc7d0dbaf8ac5057bd994697444c819fc538ebe704d72b951ca1ef95c08",
+      "bytes": 1382
+    },
+    {
+      "path": "schemas/shots.schema.json",
+      "sha256": "e6b85e819d1b45a6b94ae908221b8222c632b019d564e2f287bd40989058fcef",
+      "bytes": 1819
+    },
+    {
+      "path": "templates/character.md",
+      "sha256": "af5a8aef84edf7c3e23a0e3ba2bb719cb74b0330b7df9351894356fb73728b5a",
+      "bytes": 336
+    },
+    {
+      "path": "templates/location.md",
+      "sha256": "4afcbc0c2a500bb8e02c074a3496c5f521ed431fae5e8cfbd4dd67df364e15d0",
+      "bytes": 168
+    },
+    {
+      "path": "templates/model-export.md",
+      "sha256": "203bda11d33bc40419a76478b6055f94583a375cd179be2312aae3884d803517",
+      "bytes": 288
+    },
+    {
+      "path": "templates/project.json",
+      "sha256": "b9f56d5a7b2e58ab67b5f8260a0dfa602e64c760d089fd7b70c80973403c7904",
+      "bytes": 685
+    },
+    {
+      "path": "templates/qc-report.md",
+      "sha256": "63741011e452f420ee7ce4679de78051a8a8a8277d585bf2a77dc7ef21027428",
+      "bytes": 294
+    },
+    {
+      "path": "templates/shot.md",
+      "sha256": "d344fade6af86004219dc3cba01390536a9e196e70729af1c131e765a337617b",
+      "bytes": 299
+    },
+    {
+      "path": "templates/style.md",
+      "sha256": "20002372d32118dbfb111fe9c13ff42133dab939f7b1f0c8f1339ed2d6fa5ca8",
+      "bytes": 200
+    }
+  ]
+}

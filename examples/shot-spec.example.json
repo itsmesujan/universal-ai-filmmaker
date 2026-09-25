@@ -1,0 +1,54 @@
+{
+  "id": "shot-001",
+  "scene_id": "scene-01",
+  "beat_id": "beat-03",
+  "story_purpose": "Reveal that the protagonist is alone",
+  "duration_target": 6,
+  "subject": "Anime teenage girl under a red umbrella",
+  "reference_assets": [
+    "character:hana:v1",
+    "location:station:v1"
+  ],
+  "start_state": "Standing beneath platform lights, umbrella raised",
+  "primary_action": "She slowly lowers the umbrella after noticing the empty platform",
+  "secondary_motion": "Rain falls; distant train lights move through background",
+  "camera": {
+    "type": "slow_push_in",
+    "position": "medium_front",
+    "lens_equivalent": "normal"
+  },
+  "composition": {
+    "framing": "medium_to_close",
+    "screen_direction": "center"
+  },
+  "lighting": {
+    "key": "cool station light",
+    "rim": "wet backlight"
+  },
+  "environment": {
+    "weather": "rain",
+    "time": "night"
+  },
+  "style": {
+    "mode": "anime",
+    "rendering": "cinematic 2D/2.5D"
+  },
+  "continuity": {
+    "umbrella": "red",
+    "costume": "school_uniform_v1",
+    "hair": "hana_v1"
+  },
+  "audio": {
+    "dialogue": "",
+    "ambience": "rain and distant station hum",
+    "music": "low sustained pad"
+  },
+  "end_state": "Her face fills more of frame; umbrella lowered to shoulder height",
+  "negative_constraints": [
+    "do not change costume",
+    "do not change hair",
+    "no extra characters"
+  ],
+  "generation_method": "image_to_video",
+  "risk_level": "medium"
+}

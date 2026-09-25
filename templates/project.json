@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example-project",
+  "title": "Untitled Film",
+  "format": "short_film",
+  "target_duration_seconds": 360,
+  "aspect_ratio": "16:9",
+  "frame_rate": 24,
+  "language": "en",
+  "genre": [
+    "cinematic",
+    "anime"
+  ],
+  "status": "development",
+  "creative": {
+    "logline": "",
+    "theme": "",
+    "tone": "",
+    "audience": ""
+  },
+  "assets": {
+    "characters": [],
+    "locations": [],
+    "props": []
+  },
+  "production": {
+    "agents": [],
+    "image_models": [],
+    "video_models": [],
+    "audio_models": [],
+    "editors": []
+  },
+  "scenes": [],
+  "shots": [],
+  "continuity": {},
+  "audio": {},
+  "edit": {},
+  "qc": {}
+}

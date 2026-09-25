@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-ai-filmmaker/shots.schema.json",
+  "title": "Universal Shot Specifications",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "scene_id",
+      "story_purpose",
+      "duration_target",
+      "subject",
+      "primary_action",
+      "camera",
+      "style",
+      "continuity"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "scene_id": {
+        "type": "string"
+      },
+      "beat_id": {
+        "type": "string"
+      },
+      "story_purpose": {
+        "type": "string"
+      },
+      "duration_target": {
+        "type": "number",
+        "minimum": 0.1
+      },
+      "subject": {
+        "type": "string"
+      },
+      "reference_assets": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "start_state": {
+        "type": "string"
+      },
+      "primary_action": {
+        "type": "string"
+      },
+      "secondary_motion": {
+        "type": "string"
+      },
+      "camera": {
+        "type": "object"
+      },
+      "composition": {
+        "type": "object"
+      },
+      "lighting": {
+        "type": "object"
+      },
+      "environment": {
+        "type": "object"
+      },
+      "style": {
+        "type": "object"
+      },
+      "continuity": {
+        "type": "object"
+      },
+      "audio": {
+        "type": "object"
+      },
+      "end_state": {
+        "type": "string"
+      },
+      "negative_constraints": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "generation_method": {
+        "type": "string"
+      },
+      "risk_level": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": true
+  }
+}

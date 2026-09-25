@@ -1,0 +1,22 @@
+{
+  "provider": "{{provider}}",
+  "model": "{{model}}",
+  "verified_at": "{{YYYY-MM-DD}}",
+  "capabilities": {
+    "text_to_video": false,
+    "image_to_video": false,
+    "reference_images": false,
+    "first_frame": false,
+    "last_frame": false,
+    "multi_keyframe": false,
+    "camera_controls": [],
+    "audio": false
+  },
+  "limits": {
+    "duration": [],
+    "aspect_ratios": [],
+    "resolution": []
+  },
+  "failure_modes": [],
+  "translation_notes": []
+}

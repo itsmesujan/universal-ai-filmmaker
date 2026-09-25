@@ -1,0 +1,24 @@
+{
+  "provider": "generic",
+  "model": "replace-with-verified-model",
+  "verified_at": "YYYY-MM-DD",
+  "capabilities": {
+    "text_to_video": "unknown",
+    "image_to_video": "unknown",
+    "reference_images": "unknown",
+    "first_frame": "unknown",
+    "last_frame": "unknown",
+    "multi_keyframe": "unknown",
+    "camera_controls": "unknown",
+    "audio": "unknown"
+  },
+  "limits": {
+    "duration": "unknown",
+    "aspect_ratios": "unknown",
+    "resolution": "unknown"
+  },
+  "failure_modes": [],
+  "translation_notes": [
+    "Verify current provider documentation before using this adapter."
+  ]
+}

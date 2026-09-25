@@ -1,0 +1,45 @@
+name: Validate Skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        shell: bash
+        run: |
+          test -f SKILL.md
+          test -f README.md
+          test -f LICENSE
+          test -d references
+          test -d templates
+          test -d schemas
+          test -d model-adapters
+          test -d examples
+
+      - name: Validate JSON
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for p in Path(".").rglob("*.json"):
+              if any(part in {".git", ".venv", "node_modules"} for part in p.parts):
+                  continue
+              json.loads(p.read_text(encoding="utf-8"))
+              print("OK", p)
+          PY
+
+      - name: Check SKILL.md front matter
+        shell: bash
+        run: |
+          head -n 5 SKILL.md | grep -q '^name: universal-ai-filmmaker$'
+          head -n 5 SKILL.md | grep -q '^description:'
